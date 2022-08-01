@@ -10,10 +10,6 @@
   	
   </style>
   <body>
-  	<div>
-  		<h5>Добро пожаловать в наш интернет магазин</h5>
-
-  	</div>
   	<div class="row bg-secondary">
 		<!-- logo -->
 		<div class="col-2">
@@ -22,20 +18,57 @@
 		<div class="col d-flex fs-5 fw-bold pt-5">
 			<div class="col">Главная</div>
 			<div class="col">Распродажа</div>
-			<div class="col">доставка</div>
+			<div class="col">Доставка</div>
 			<div class="col-2">О нас</div>
 			<div class="col">Блог</div>
 
 		</div>
-		<div class="col-2 d-flex pt-5">
-			<div>login reg  </div>
+		<div class="col-3 d-flex pt-5">
+			<div class="me-4" style="">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+						  Войти
+						</button>
 
-			<div>phone</div>
+						<!-- Modal -->
+						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="staticBackdropLabel">Войдите с помощью телефона</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						        
+						        <label for="basic-url" class="form-label">Введите номер телефона и пароль</label>
+										<div class="input-group mb-3">
+										  <span class="input-group-text" id="basic-addon3">+7 </span>
+										  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+										</div>
+										<div class="input-group mb-3">
+										  <input type="text" class="form-control" placeholder="пароль" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+						      </div>
+						      <div class="modal-footer" style="justify-content: flex-start;">
+						      	<button type="button" class="btn btn-secondary" style="text-align: left;">Зарегитрироваться</button>
+						        <button type="button" class="btn btn-primary ms-auto">Войти</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+			
+					
+			</div>
+
+			<div class="mt-1">
+					<p>8-999-999-99-99</p>
+
+			</div>
 		</div>
 	</div>
-	<div class="row p-5">
+	<div class="row ps-5 pt-5">
 			<div class="dropdown col-2">
-			  <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 			    Главное меню
 			  </button>
 			  <ul class="dropdown-menu">
@@ -44,7 +77,7 @@
 			    <li><button class="dropdown-item" type="button">покупки</button></li>
 			  </ul>
 			</div>
-		<div class="col d-flex">
+		<div class="col-6 d-flex">
 			<div class="input-group mb-3">
 			  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Категории</button>
 			  <ul class="dropdown-menu">
@@ -55,21 +88,22 @@
 			    <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
 			  </ul>
 			  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Поиск">
-			  <button>Search</button>
+			  <button class="btn btn-warning">Искать</button>
 			</div>	
 		</div>
 		
-		<div class="col d-flex" style="margin-top: -15px;">
-			<img src="2.png" class="col-1">
-			<img src="3.png" class="col-1">
-			<div>
-				<img src="4.png"  class="col-6">
-				<span>- 688 p.</span>
-			</div>
+		<div class="col-1 d-flex mt-2 ms-5" style="margin-top: -15px;">
+			<img src="9.png" class="w-25 h-50">
+			<img src="10.png" class="w-25 h-50 ms-3">
+			
+		</div>
+		<div class="col ms-5">
+				<img src="cart.png"  class="col-2 me-3">
+				<span>- 0 p.</span>
 		</div>
 	</div>
 	<div class="row p-5">
-		<div class="col-3 fs-3">
+		<div class="col-2 fs-3">
 			<div class="">снаряжение</div>
 			<div>термобелье</div>
 			<div>посуда</div>
@@ -78,15 +112,15 @@
 			<div>гермомешки</div>
 
 		</div>
-		<div class="col">
+		<div class="col-7">
 			<img src="5.jpg" class="col-12">
 		</div>
-		<div class="col">
-			<div>
-				<img src="6.jpg" class="col-6">
+		<div class="col-3">
+			<div class="">
+				<img src="6.jpg" class="col-12">
 			</div>
 			<div>
-				<img src="7.jpg" class="col-6">
+				<img src="7.jpg" class="col-12">
 			</div>			
 		</div>
 	</div>
