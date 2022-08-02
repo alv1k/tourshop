@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
+  <style type="text/css">
+  	
+  </style>
+</head>
+
+  <body>
+  	<div class="row bg-secondary">
+		<!-- logo -->
+		<div class="col-2">
+			<img src="1.png" class="col-6 ms-5">
+		</div>
+		<div class="col d-flex fs-5 fw-bold ps-4" style="padding-top: px; font-family: Ubuntu;align-items: center">
+			<div class="col" style="">Главная</div>
+			<div class="col-3">Распродажа</div>
+			<div class="col ">Доставка</div>
+			<div class="col-2 ">О нас</div>
+			<div class="col " >Блог</div>
+
+		</div>
+		<div class="col-3 d-flex" style="align-items: center">
+			<div class="me-4">
+				<button style="font-family: Raleway" type="button" class="btn btn-warning">
+				  Личный кабинет
+				</button>										
+			</div>
+
+			<div class="mt-1" style="align-items: center">
+					<p>8-999-999-99-99</p>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="row p-5">
+		<div class="col-2 fs-4 fw-bold">
+			<div class="border-top orders">Заказы</div>
+			<div class="border-top favorites">Избранное</div>
+			<div class="border-top feedbacks">Ваши отзывы</div>
+			<div class="border-top settings">Настройки</div>
+
+		</div>
+		<div class="col-7 main-categories">
+			<div>
+				<p class="orders0">Заказы</p>
+				<p class="favorites0" style="display: none">Избранное</p>
+				<p class="feedbacks0" style="display: none">Ваши отзывы</p>
+				<p class="settings0" style="display: none">Настройки</p>
+			</div>
+			<div class="main-cat1" style="display: none">
+				<!-- //заказы -->
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="">
+				<img src="6.jpg" class="col-4">
+				<p>петров иван</p>
+				<p>Возраст</p>
+				<p>Место работы</p>
+				<p>Любимые места отдыха</p>
+			</div>		
+		</div>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    	
+    	
+
+    </script>
+    <script type="text/javascript">
+    	let orders0 = document.querySelector(".orders0")
+    	let favorites0 = document.querySelector(".favorites0")
+    	let feedbacks0 = document.querySelector(".feedbacks0")
+    	let settings0 = document.querySelector(".settings0")
+
+    	let orders = document.querySelector(".orders")
+    	orders.onclick = function(){
+			favorites0.style.display = "none"
+			feedbacks0.style.display = "none"
+			settings0.style.display = "none"
+			orders0.style.display = "block"
+    	}
+    	let favorites = document.querySelector(".favorites")
+    	favorites.onclick = function(){
+			orders0.style.display = "none"
+			feedbacks0.style.display = "none"
+			settings0.style.display = "none"
+
+			favorites0.style.display = "block"
+    	}
+    	let feedbacks = document.querySelector(".feedbacks")
+    	feedbacks.onclick = function(){
+			orders0.style.display = "none"
+			favorites0.style.display = "none"
+			settings0.style.display = "none"
+			feedbacks0.style.display = "block"
+    	}
+    	let settings = document.querySelector(".settings")
+    	settings.onclick = function(){
+			orders0.style.display = "none"
+			favorites0.style.display = "none"
+			feedbacks0.style.display = "none"
+			settings0.style.display = "block"
+    	}
+    </script>
+  </body>
+</html>

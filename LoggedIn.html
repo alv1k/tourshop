@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
+  <style type="text/css">
+  	
+  </style>
+</head>
+
+  <body>
+  	<div class="row bg-secondary">
+		<!-- logo -->
+		<div class="col-2">
+			<img src="1.png" class="col-6 ms-5">
+		</div>
+		<div class="col d-flex fs-5 fw-bold ps-4" style="padding-top: px; font-family: Ubuntu;align-items: center">
+			<div class="col" style="">Главная</div>
+			<div class="col-3">Распродажа</div>
+			<div class="col ">Доставка</div>
+			<div class="col-2 ">О нас</div>
+			<div class="col " >Блог</div>
+
+		</div>
+		<div class="col-3 d-flex" style="align-items: center">
+			<div class="me-4">
+				<button style="font-family: Raleway" type="button" class="btn btn-warning">
+				  Личный кабинет
+				</button>										
+			</div>
+
+			<div class="mt-1" style="align-items: center">
+					<p>8-999-999-99-99</p>
+
+			</div>
+		</div>
+	</div>
+	<div class="row ps-5 pt-5" style="font-family: Raleway">
+			<div class="dropdown col-2">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+			    Главное меню
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><button class="dropdown-item" type="button">профиль</button></li>
+			    <li><button class="dropdown-item" type="button">настройки</button></li>
+			    <li><button class="dropdown-item" type="button">покупки</button></li>
+			  </ul>
+			</div>
+		<div class="col-6 d-flex">
+			<div class="input-group mb-3">
+			  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Категории</button>
+			  <ul class="dropdown-menu">
+			    <li><a class="dropdown-item" href="#">снаряжение</a></li>
+			    <li><a class="dropdown-item" href="#">термобелье</a></li>
+			    <li><a class="dropdown-item" href="#">посуда</a></li>
+			    <li><hr class="dropdown-divider"></li>
+			    <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+			  </ul>
+			  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Поиск">
+			  <button class="btn btn-warning" style="font-family: Raleway">Искать</button>
+			</div>	
+		</div>
+		
+		<div class="col-1 d-flex mt-2 ms-5" style="margin-top: -15px;">
+			<img src="9.png" class="w-25 h-50">
+			<img src="10.png" class="w-25 h-50 ms-3">
+			
+		</div>
+		<div class="col ms-5">
+				<img src="cart.png"  class="col-2 me-3">
+				<span style="font-family: Arial">- 0 p.</span>
+		</div>
+	</div>
+	<div class="row p-5">
+		<div class="col-2 fs-5">
+			<div class="border-top cat1">снаряжение</div>
+			<div class="border-top cat2">термобелье</div>
+			<div class="border-top cat3">посуда</div>
+			<div class="border-top cat4">мультитул</div>
+			<div class="border-top cat5">спальные мешки</div>
+			<div class="border-top cat6">гермомешки</div>
+
+		</div>
+		<div class="col-7 main-categories">
+			<img src="5.jpg" class="col-12 main-image">
+			<div class="main-cat1" style="display: none">
+				<div class="row">
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="">
+				<img src="6.jpg" class="col-12">
+			</div>
+			<div>
+				<img src="7.jpg" class="col-12">
+			</div>			
+		</div>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    	
+    	
+
+    </script>
+    <script type="text/javascript">
+    	let mainCategories = document.querySelector(".main-categories")
+
+    	let cat1 = document.querySelector(".cat1")
+    	cat1.onclick = function(){
+    		//обращаться к бд на этой основе создавать страницу с товарами и чтобы можно было листать страницы
+    		for(let i = 0; i < 2; i++){
+				let elem = document.createElement("div")
+	    		mainCategories.appendChild(elem)
+	    		elem.classList.add("col-4")
+    		}
+    		
+
+    	}
+    	let cat2 = document.querySelector(".cat2")
+    	cat2.onclick = function(){
+    		alert(1)
+    	}
+    	let cat3 = document.querySelector(".cat3")
+    	cat3.onclick = function(){
+    		alert(1)
+    	}
+    	let cat4 = document.querySelector(".cat4")
+    	cat4.onclick = function(){
+    		alert(1)
+    	}
+    	let cat5 = document.querySelector(".cat5")
+    	cat5.onclick = function(){
+    		alert(1)
+    	}
+    	let cat6 = document.querySelector(".cat6")
+    	cat6.onclick = function(){
+    		alert(1)
+    	}
+    </script>
+  </body>
+</html>
